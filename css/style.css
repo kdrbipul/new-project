@@ -15,3 +15,25 @@
 .social_icon ul li a{
     cursor: pointer;
 }
+.active{
+    font-weight:700;
+    font-size:20px;
+    color:#00afaa !important;
+}
+ul li a{
+    text-transform: capitalize;
+}
+.nav-item:last-child a{
+    background-color:#00afaa;
+    border-radius:50px;
+    border:1px solid transparent;
+    transition:all 0.3s ease-in-out;
+}
+.nav-item:last-child a{
+    color:white !important;
+}
+.nav-item:last-child:hover a{
+    background-color:transparent;
+    border:1px solid #00afaa;
+    color:#00afaa !important;
+}
