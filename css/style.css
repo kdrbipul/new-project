@@ -1,0 +1,17 @@
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+}
+.social_icon{
+    margin-left: 34px;
+}
+.social_icon ul{
+    display:flex;
+    gap:8px;
+    justify-content: start;
+}
+.social_icon ul li{
+    list-style: none;
+}
+.social_icon ul li a{
+    cursor: pointer;
+}
