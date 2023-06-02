@@ -17,7 +17,7 @@
 }
 .active{
     font-weight:700;
-    font-size:20px;
+    font-size:16px;
     color:#00afaa !important;
 }
 ul li a{
@@ -27,7 +27,7 @@ ul li a{
     background-color:#00afaa;
     border-radius:50px;
     border:1px solid transparent;
-    transition:all 0.3s ease-in-out;
+    transition:all 0.4s ease-in-out;
 }
 .nav-item:last-child a{
     color:white !important;
