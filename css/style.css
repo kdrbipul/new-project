@@ -41,7 +41,7 @@ ul li a{
     max-width:90%;
     height:2px;
     background-color:rgba(0, 0, 0, 0.274);
-    margin-bottom:3rem;
+    margin:3rem;
 }
 #banner{
     background-image:url('../images/ima.jpg');
@@ -68,12 +68,32 @@ ul li a{
 .myButton a:hover{
     color:#8ff8f5e3;
 }
+#flex_2{
+    flex-direction: row-reverse;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin:0 auto;
+}
 
-
-
-
+@media (max-width:992px) {
+    .grid{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media(max-width:530px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
 @media(max-width:480px){
     /* .social_icon{
         margin-left:-30px;
     } */
+}
+@media(max-width:768px){
+    #flex_1, #flex_2, #flex_3{
+        flex-direction:column-reverse;
+    }
 }
