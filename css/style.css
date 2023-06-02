@@ -2,7 +2,7 @@
     justify-content: end;
 }
 .social_icon{
-    margin-left: 34px;
+    margin-left: -29px;
 }
 .social_icon ul{
     display:flex;
@@ -36,4 +36,40 @@ ul li a{
     background-color:transparent;
     border:1px solid #00afaa;
     color:#00afaa !important;
+}
+.underline{
+    max-width:90%;
+    height:2px;
+    background-color:rgba(0, 0, 0, 0.274);
+    margin-bottom:3rem;
+}
+#banner{
+    background-image:url('../images/ima.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+.para{
+    margin:3rem auto;
+    padding: 5rem;
+    color:white;
+}
+.btn{
+    background-color:#8ff8f5e3;
+    border-radius:50px;
+    border:1px solid #8ff8f5e3;
+}
+.btn:hover{
+    border:1px solid tomato;
+    background-color:transparent;
+    color:#8ff8f5e3;
+}
+
+
+
+
+@media(max-width:480px){
+    /* .social_icon{
+        margin-left:-30px;
+    } */
 }
