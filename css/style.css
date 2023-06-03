@@ -97,6 +97,16 @@ ul li a{
 .parterns_article a{
     text-decoration:none;
 }
+.partners_catagories{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    text-align:center;
+}
+.partners_card{
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 .icon_btn{
     background:rgba(0, 0, 0, 0.822);
     width:50px;
@@ -108,16 +118,28 @@ ul li a{
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-left:10px;
+    margin-bottom:10px;
 }
 
 
 
 
 
-
+@media(max-width:1200px) {
+    .partners_catagories{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width:992px) {
     .grid{
         grid-template-columns: repeat(3, 1fr); 
+    }
+    .partners_catagories{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
     }
 }
 @media(max-width:530px){
