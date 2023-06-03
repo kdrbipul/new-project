@@ -1,3 +1,9 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 /* nav bar part start here */
 .navbar-expand-lg .navbar-collapse{
     justify-content: end;
@@ -42,8 +48,12 @@ ul li a{
 .underline{
     max-width:90%;
     height:2px;
-    background-color:rgba(0, 0, 0, 0.274);
-    margin:3rem auto;
+    background-color:rgb(255 249 249 / 86%);
+    /* margin-left:auto;
+    margin-right:auto;
+    margin-top:-48px;
+    margin-bottom:25px; */
+    margin:-55px auto 25px;
 }
 /* banner part start here */
 #banner{
@@ -180,5 +190,63 @@ ul li a{
 }
 /* contact part end here */
 
+
+
+/* company part start here */
+#company{
+    background-color:rgb(104, 103, 103);
+    margin-top:-49px;
+}
+
+.company_details{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+.company_list ul{
+    list-style:none;
+}
+.company_list ul li a {
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.466);
+    cursor:pointer;
+    text-transform: uppercase;
+}
+/* company part end here */
+
+
+/* footer part start here */
+#footer{
+    background-color:rgb(104, 103, 103);
+    margin-top:-20px;
+    margin-bottom:20px;
+}
+/* footer part end here */
+
+
+/* scroll to top button part start here */
+.to-top{
+    background:skyblue;
+    position:fixed;
+    bottom:16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    color:white !important;
+    text-decoration:none;
+    opacity:0;
+    pointer-events: none;
+    transition:all .4s;
+}
+.to-top.active{
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+}
+/* scroll to top button part end here */
 
 
