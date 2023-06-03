@@ -1,3 +1,4 @@
+/* nav bar part start here */
 .navbar-expand-lg .navbar-collapse{
     justify-content: end;
 }
@@ -37,12 +38,14 @@ ul li a{
     border:1px solid #00afaa;
     color:#00afaa !important;
 }
+/* nav bar part end here */
 .underline{
     max-width:90%;
     height:2px;
     background-color:rgba(0, 0, 0, 0.274);
-    margin:3rem;
+    margin:3rem auto;
 }
+/* banner part start here */
 #banner{
     background-image:url('../images/ima.jpg');
     background-repeat:no-repeat;
@@ -68,6 +71,9 @@ ul li a{
 .myButton a:hover{
     color:#8ff8f5e3;
 }
+/* banner part end here */
+
+/* developer part start here */
 #flex_2{
     flex-direction: row-reverse;
 }
@@ -88,6 +94,11 @@ ul li a{
     justify-content:center;
     gap:3rem;
 }
+/* developer part end here */
+
+
+
+/* partners part start here */
 .partners>h1{
     text-align:center;  
 }
@@ -121,6 +132,36 @@ ul li a{
     margin-left:10px;
     margin-bottom:10px;
 }
+/* partners part end here */
+
+
+
+/* contact part start here */
+#contact{
+    background-color:rgba(5, 3, 17, 0.884);
+}
+
+.contact_catagoris{
+    color:white;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+}
+
+.contact_secondary{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:.9rem;
+    padding:10px auto;
+}
+
+.contact_area{
+    width:100%;
+}
+
+.contact_contanct{
+}
+/* contact part end here */
 
 
 
@@ -155,5 +196,21 @@ ul li a{
 @media(max-width:768px){
     #flex_1, #flex_2, #flex_3{
         flex-direction:column-reverse;
+    }
+    .contact_catagoris{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col-6{
+        width:100%;
+    }
+}
+@media (max-width:450px){
+    .contact_secondary{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width:400px){
+    .col-6{
+        width:100%;
     }
 }
